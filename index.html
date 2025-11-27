@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="My_images/logo2.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+
+        <div class="head-text">
+            <!-- <h1>Hi, I'm <span>Ayush K</span></h1> -->
+            
+            <div class="home">
+    <div class="home-left">
+        <h1>Hi, I'm Ayush K</h1>
+        <p>Welcome to my portfolio</p>
+    </div>
+
+    <div class="home-right">
+        <img src="My_images/ayu.jpg" alt="Profile Photo">
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="left">
+                <img src="My_images/ayu2.jpg">
+            </div>
+
+            <div class="right">
+                <h1 class="sub-title">About me</h1>
+                <p style="padding-top: 30px;">
+                    A passionate Computer Science student with strong fundamentals 
+                    in programming, data structures, and problem-solving. Interested 
+                    in building real-world applications and continuously learning new 
+                    technologies. Looking for opportunities to apply my skills
+                     and grow in a professional environment.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab(event, 'project')">Projects</p>
+                    <p class="tab-links" onclick="openTab(event, 'education')">Education</p>
+                </div>
+
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Java</span></li>
+                        <li><span>Full stack</span></li>    
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="project">
+                    <ul>
+                        <li><span>Weather Forecast App (API Based)</span><br></li>
+                        <li><span>Library Management System</span><br></li>
+                        <li><span>Weather Forecast App (API Based)</span><br></li>
+                        <!--  -->
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>SSLC (10th)</span><br>85%</li>
+                        <li><span>PUC</span><br>84%</li>
+                        <li><span>B.E (CSE)</span><br>8.5 CGPA</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projects" id="project-section">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Task Manager / To-Do App</h2>
+                <p>Responsive app with local storage or backend to store user tasks.    </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Library Management System</h2>
+                <p>Python + MySQL program to manage book issues, returns, and student records.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-bolt"></i>
+                <h2>Weather Forecast App (API Based)</h2>
+                <p>Uses OpenWeather API to fetch and display real-time weather.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="resume" id="resume">
+    <div class="container">
+        <h1 class="sub-title">My Resume</h1>
+        <div class="resume-list">
+            <img src="My_images/resume_sanp.png">
+
+            <!-- <a href="DhruvaResume.pdf" target="_blank">
+                <button class="view_button"><i class="fa-solid fa-eye"></i> View</button>
+            </a> -->
+
+            <a href="AyushResume.pdf" download>
+                <button class="download_button"><i class="fa-solid fa-download"></i> Download</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="contact_left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> ayushk1205@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91-7204779514</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="contact_right">
+            <div id="message-status" style="margin-bottom: 10px;"></div>
+            
+            <!-- <form method="POST" action="contact_submit.php"> -->
+                <form>
+                <input type="text" name="Name" placeholder="Ex: Ayush" required>
+                <input type="email" name="email" placeholder="  Ex: abc@gmail.com" required>
+                <textarea name="Message" rows="6" placeholder="Your messages"></textarea>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <!-- <p>Copyright © Ayush K.</p> -->
+    </div>
+</div>
+
+<script src="script.js"></script> 
+
+</body>
+</html>
